@@ -46,6 +46,8 @@ version is 1.7.3
 
 ## Gethのコンソールコマンド
 
+Gethコンソールでコマンド入力するときはTabキーで補完がでてくる
+
 ### ブロック内容の確認
 
 `eth.getBlock` でブロック内容を確認
@@ -124,10 +126,10 @@ password
 
 ### トランザクションの確認
 
-`eth,sendTransaction` したときの返り値を使用して
+`eth,sendTransaction` したときの返り値(トランザクションハッシュ)を使用して
 トランザクションを確認できる
 
-`eth.getTransaction("返り値")`
+`eth.getTransaction("トランザクションハッシュ")`
 
 返ってくるプロパティ(blockNumber)の値がnullになっていて
 ブロックに取り込まれていないことを示す
@@ -140,7 +142,7 @@ password
 
 その後時間を置いて再度
 
-`eth.getTransaction("返り値")`
+`eth.getTransaction("トランザクションハッシュ")`
 
 とするとblockNumberに番号が振られる
 この番号は何番目のブロックに取り込まれているかを表す
@@ -159,4 +161,5 @@ password
 
 トランザクションは実行されるとレシートを発行する
 
-`eth.getTransactionRecipt` コマンドで確認できる
+`eth.getTransactionReceipt` コマンドで確認できる
+引数はトランザクションハッシュを使用する
