@@ -1,0 +1,8 @@
+geth/private_net/error.log
+geth/private_net/geth/chaindata/
+geth/private_net/geth/lightchaindata/
+geth/private_net/geth/LOCK
+geth/private_net/geth/nodekey
+geth/private_net/geth/transactions.rlp
+geth/private_net/history
+geth/private_net/keystore/
