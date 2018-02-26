@@ -1,5 +1,10 @@
 ## Go Ethereum
 
+プライベートネットで動かすために、ローカルの環境に初めのブロックを作成する
+最初のブロックはGenesisブロックと呼ばれる
+
+gethフォルダ直下に `private_net` フォルダを作成して `genesis.json` ファイルを作成する
+
 Download from https://ethereum.github.io/go-ethereum/downloads/
 
 version is 1.7.3
