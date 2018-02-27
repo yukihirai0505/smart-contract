@@ -6,12 +6,12 @@ contract SimpleStorage {
 	uint storedData;
 
 	// storedDataを変更する
-	function set(uint x) {
+	function set(uint x) public {
 		storedData = x;
 	}
 
 	// storedDataを取得する
-	function get() constant returns (uint) {
+	function get() public constant returns (uint) {
 		return storedData;
 	}
 }
