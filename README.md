@@ -17,7 +17,7 @@ version is 1.7.3
 
 ### Gethの起動
 
-`./geth/geth --networkid "10" --nodiscover --datadir ./geth/private_net --rpc --rpcaddr "localhost" --rpcport "8584" --rpccorsdomain "*" --rpcapi "eth,net,web3,personal" --targetgaslimit "20000000" console 2>> ./geth/private_net/error.log`
+`./geth/geth --networkid "10" --nodiscover --datadir ./geth/private_net --rpc --rpcaddr "localhost" --rpcport "8545" --rpccorsdomain "*" --rpcapi "eth,net,web3,personal" --targetgaslimit "20000000" console 2>> ./geth/private_net/error.log`
 
 `Welcome to the Geth JavaScript console!` と表示されればOK
 
@@ -122,7 +122,7 @@ password
 
 起動オプション
 
-`./geth/geth --networkid "10" --nodiscover --datadir ./geth/private_net --rpc --rpcaddr "localhost" --rpcport "8584" --rpccorsdomain "*" --rpcapi "eth,net,web3,personal" --targetgaslimit "20000000" console 2>> ./geth/private_net/error.log --unlock [address,address,address] --password ./geth/private_net/password.txt`
+`./geth/geth --networkid "10" --nodiscover --datadir ./geth/private_net --rpc --rpcaddr "localhost" --rpcport "8545" --rpccorsdomain "*" --rpcapi "eth,net,web3,personal" --targetgaslimit "20000000" console 2>> ./geth/private_net/error.log --unlock [address,address,address] --password ./geth/private_net/password.txt`
 
 ### トランザクションの確認
 
