@@ -49,3 +49,8 @@ truffle(develop)> m.getBalance(web3.eth.accounts[1])
 { [String: '1000'] s: 1, e: 3, c: [ 1000 ] }
 ```
 
+## テスト実行
+
+```
+truffle(develop)> test
+```
