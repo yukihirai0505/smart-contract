@@ -91,3 +91,4 @@ truffle migrate
 truffle unbox metacoin
 ```
 
+=> https://github.com/yukihirai0505/smart-contract/blob/master/examples/metacoin/README.md
