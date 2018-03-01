@@ -92,3 +92,7 @@ truffle unbox metacoin
 ```
 
 => https://github.com/yukihirai0505/smart-contract/blob/master/examples/metacoin/README.md
+
+## ERC20準拠のトークン作成
+
+=> https://github.com/yukihirai0505/smart-contract/blob/master/examples/dapps-token/README.md
