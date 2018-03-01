@@ -8,14 +8,19 @@ import "./ConvertLib.sol";
 // token, see: https://github.com/ConsenSys/Tokens. Cheers!
 
 contract MetaCoin {
+	// mapping型のbalancesを宣言 keyがaddress, valueがuint
 	mapping (address => uint) balances;
 
+	// event型のTransferは送金を記録
 	event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
+	// コンストラクタ関数 初期化時に実行 tx.origin はコントラクトを呼び出したアドレス
+	// このコントラクトを最初に作成したアカウントは無条件に10,000 MetaCoinを入手することになる
 	function MetaCoin() public {
 		balances[tx.origin] = 10000;
 	}
 
+	// 実効するアカウントの残高などをみて送るかどうかの処理へ
 	function sendCoin(address receiver, uint amount) public returns(bool sufficient) {
 		if (balances[msg.sender] < amount) return false;
 		balances[msg.sender] -= amount;
@@ -25,6 +30,7 @@ contract MetaCoin {
 	}
 
 	function getBalanceInEth(address addr) public view returns(uint){
+		// addrの残高を2倍にしたものを返す
 		return ConvertLib.convert(getBalance(addr),2);
 	}
 
