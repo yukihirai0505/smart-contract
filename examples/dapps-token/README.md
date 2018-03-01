@@ -18,3 +18,19 @@ event Approval(address indexed tokenOwner, address indexed spender, uint tokens)
 ```
 
 https://theethereum.wiki/w/index.php/ERC20_Token_Standard
+
+## Truffleプロジェクトの作成
+
+```
+mkdir dapps-token
+cd dapps-token
+truffle init
+```
+
+## OpenZeppelinのインストール
+
+```
+npm init -f
+npm install zeppelin-solidity
+```
+
