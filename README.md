@@ -163,3 +163,7 @@ password
 
 `eth.getTransactionReceipt` コマンドで確認できる
 引数はトランザクションハッシュを使用する
+
+## 参考
+
+https://ja.scribd.com/document/369210857/Webthereum
